@@ -20,7 +20,7 @@
     .align-top, .align-top .item-content, .align-top .item-inner {
         .align-items(flex-start);
     }
-    
+
     .inset() {
         margin-left: 16px;
         margin-right: 16px;
@@ -58,7 +58,7 @@
         box-sizing:border-box;
         position: relative;
     }
-    
+
     .item-media {
         .flexbox();
         .flex-shrink(0);
@@ -109,7 +109,8 @@
         white-space: nowrap;
         color: #757575;
         .flex-shrink(0);
-        margin-left: 8px;
+        margin-left: auto;
+        padding-left: 8px;
         .flexbox();
         max-height: 28px;
         font-size: 14px;
@@ -121,7 +122,7 @@
         position: relative;
         display: block;
     }
-    .item-link {
+    .item-link, .list-button {
         .transition(300ms);
         display: block;
         color: inherit;
@@ -140,12 +141,12 @@
         html:not(.watch-active-state) &:active, &.active-state {
             background-color: rgba(0,0,0,0.1);
         }
-        &.list-button {
-            padding: 0 16px;
-            font-size: 16px;
-            display: block;
-            line-height: 48px;
-        }
+    }
+    .list-button {
+        padding: 0 16px;
+        font-size: 16px;
+        display: block;
+        line-height: 48px;
     }
     .item-content {
         box-sizing:border-box;
@@ -179,7 +180,7 @@
         .swipeout-content, .swipeout-actions-right a, .swipeout-actions-left a, .swipeout-overswipe {
             -webkit-transition: 300ms;
             transition: 300ms;
-        }    
+        }
     }
     .swipeout-content {
         position: relative;
@@ -294,7 +295,7 @@
             }
         }
         + .list-group ul {
-            .hairline-remove(top);   
+            .hairline-remove(top);
         }
     }
     .item-divider, .list-group-title {
@@ -340,7 +341,7 @@
     }
     &.sortable {
         .item-inner {
-            .transition(300ms);       
+            .transition(300ms);
         }
     }
     &.sortable-opened {
@@ -388,4 +389,7 @@
             }
         }
     }
+
+    .no-hairlines();
+    .no-hairlines-between()
 }

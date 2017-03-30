@@ -31,7 +31,7 @@
     .justify-content(flex-start);
 }
 .toolbar-inner {
-    .justify-content(space-between);   
+    .justify-content(space-between);
 }
 .navbar-inner.cached {
     display: none;
@@ -262,6 +262,11 @@
         overflow: hidden;
         max-width: 100%;
     }
+    &.toolbar-bottom {
+        span.tabbar-label {
+            text-transform: none;
+        }
+    }
 }
 .tabbar-scrollable {
     .toolbar-inner {
@@ -282,5 +287,10 @@
     .tab-link-highlight {
         bottom: auto;
         top: 0;
+    }
+}
+.subnavbar, .navbar {
+    input[type="text"], input[type="password"], input[type="search"], input[type="email"], input[type="tel"], input[type="url"] {
+        .bars-input();
     }
 }

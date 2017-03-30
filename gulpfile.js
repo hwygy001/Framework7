@@ -53,7 +53,7 @@
                     ios: 'src/less/ios/',
                     material: 'src/less/material/'
                 },
-                scripts: 'src/js/*.js'
+                scripts: ['src/js/*.js', 'src/js/*/*.js']
             },
             examples: {
                 root: 'examples/',
@@ -64,65 +64,67 @@
             filename: 'framework7',
             jsFiles: [
                 'src/js/wrap-start.js',
-                'src/js/f7-intro.js',
-                'src/js/views.js',
-                'src/js/navbars.js',
-                'src/js/searchbar.js',
-                'src/js/messagebar.js',
-                'src/js/xhr.js',
-                'src/js/pages.js',
-                'src/js/router.js',
-                'src/js/modals.js',
-                'src/js/progressbar.js',
-                'src/js/panels.js',
-                'src/js/lazy-load.js',
-                'src/js/material-preloader.js',
-                'src/js/messages.js',
-                'src/js/swipeout.js',
-                'src/js/sortable.js',
-                'src/js/smart-select.js',
-                'src/js/virtual-list.js',
-                'src/js/pull-to-refresh.js',
-                'src/js/infinite-scroll.js',
-                'src/js/scroll-toolbars.js',
-                'src/js/material-tabbar.js',
-                'src/js/tabs.js',
-                'src/js/accordion.js',
-                'src/js/fast-clicks.js',
-                'src/js/clicks.js',
-                'src/js/resize.js',
-                'src/js/forms-storage.js',
-                'src/js/forms-ajax.js',
-                'src/js/forms-textarea.js',
-                'src/js/material-inputs.js',
-                'src/js/push-state.js',
-                'src/js/swiper-init.js',
-                'src/js/photo-browser.js',
-                'src/js/autocomplete.js',
-                'src/js/picker.js',
-                'src/js/calendar.js',
-                'src/js/notifications.js',
-                'src/js/template7-templates.js',
-                'src/js/plugins.js',
-                'src/js/init.js',
-                'src/js/f7-outro.js',
-                'src/js/dom7-intro.js',
-                'src/js/dom7-methods.js',
-                'src/js/dom7-ajax.js',
-                'src/js/dom7-utils.js',
-                'src/js/dom7-outro.js',
-                'src/js/proto-support.js',
-                'src/js/proto-device.js',
-                'src/js/proto-plugins.js',
-                'src/js/template7.js',
-                'src/js/swiper.js',
+                'src/js/framework7/f7-intro.js',
+                'src/js/framework7/views.js',
+                'src/js/framework7/navbars.js',
+                'src/js/framework7/searchbar.js',
+                'src/js/framework7/messagebar.js',
+                'src/js/framework7/xhr.js',
+                'src/js/framework7/pages.js',
+                'src/js/framework7/router.js',
+                'src/js/framework7/modals.js',
+                'src/js/framework7/progressbar.js',
+                'src/js/framework7/panels.js',
+                'src/js/framework7/lazy-load.js',
+                'src/js/framework7/material-preloader.js',
+                'src/js/framework7/messages.js',
+                'src/js/framework7/swipeout.js',
+                'src/js/framework7/sortable.js',
+                'src/js/framework7/smart-select.js',
+                'src/js/framework7/virtual-list.js',
+                'src/js/framework7/pull-to-refresh.js',
+                'src/js/framework7/infinite-scroll.js',
+                'src/js/framework7/scroll-toolbars.js',
+                'src/js/framework7/material-tabbar.js',
+                'src/js/framework7/tabs.js',
+                'src/js/framework7/accordion.js',
+                'src/js/framework7/fast-clicks.js',
+                'src/js/framework7/clicks.js',
+                'src/js/framework7/resize.js',
+                'src/js/framework7/forms-storage.js',
+                'src/js/framework7/forms-ajax.js',
+                'src/js/framework7/forms-textarea.js',
+                'src/js/framework7/material-inputs.js',
+                'src/js/framework7/push-state.js',
+                'src/js/framework7/swiper-init.js',
+                'src/js/framework7/photo-browser.js',
+                'src/js/framework7/autocomplete.js',
+                'src/js/framework7/picker.js',
+                'src/js/framework7/calendar.js',
+                'src/js/framework7/notifications.js',
+                'src/js/framework7/data-table.js',
+                'src/js/framework7/template7-templates.js',
+                'src/js/framework7/plugins.js',
+                'src/js/framework7/init.js',
+                'src/js/framework7/f7-outro.js',
+                'src/js/dom7/dom7-intro.js',
+                'src/js/dom7/dom7-methods.js',
+                'src/js/dom7/dom7-ajax.js',
+                'src/js/dom7/dom7-utils.js',
+                'src/js/dom7/dom7-outro.js',
+                'src/js/animate7/animate7.js',
+                'src/js/framework7/proto-support.js',
+                'src/js/framework7/proto-device.js',
+                'src/js/framework7/proto-plugins.js',
+                'src/js/template7/template7.js',
+                'src/js/swiper/swiper.js',
                 'src/js/wrap-end.js'
             ],
             modules: require('./modules.json'),
-            pkg: require('./bower.json'),
+            pkg: require('./package.json'),
             banner: [
                 '/**',
-                ' * <%= pkg.name %> <%= pkg.version %>',
+                ' * Framework7 <%= pkg.version %>',
                 ' * <%= pkg.description %>',
                 '<% if(typeof(theme) !== "undefined") {%> * \n * <%= theme %>\n *<% } else { %> * <% } %>',
                 // ' * ',
@@ -132,14 +134,14 @@
                 ' * The iDangero.us',
                 ' * http://www.idangero.us/',
                 ' * ',
-                ' * Licensed under <%= pkg.license.join(" & ") %>',
+                ' * Licensed under <%= pkg.license %>',
                 ' * ',
                 ' * Released on: <%= date.month %> <%= date.day %>, <%= date.year %>',
                 ' */',
                 ''].join('\n'),
             customBanner: [
                 '/**',
-                ' * <%= pkg.name %> <%= pkg.version %> - Custom Build',
+                ' * Framework7 <%= pkg.version %> - Custom Build',
                 ' * <%= pkg.description %>',
                 '<% if(typeof(theme) !== "undefined") {%> * \n * <%= theme %>\n *<% } else { %> * <% } %>',
                 ' * ',
@@ -151,7 +153,7 @@
                 ' * The iDangero.us',
                 ' * http://www.idangero.us/',
                 ' * ',
-                ' * Licensed under <%= pkg.license.join(" & ") %>',
+                ' * Licensed under <%= pkg.license %>',
                 ' * ',
                 ' * Released on: <%= date.month %> <%= date.day %>, <%= date.year %>',
                 ' */',
@@ -170,11 +172,11 @@
         if (filename === 'wrap-start.js' || filename === 'wrap-end.js') {
             addIndent = '';
         }
-        var add4spaces = ('f7-intro.js f7-outro.js proto-device.js proto-plugins.js proto-support.js dom7-intro.js dom7-outro.js template7.js swiper.js').split(' ');
+        var add4spaces = ('framework7/f7-intro.js framework7/f7-outro.js framework7/proto-device.js framework7/proto-plugins.js framework7/proto-support.js dom7/dom7-intro.js dom7/dom7-outro.js animate7/animate7.js template7/template7.js swiper/swiper.js').split(' ');
         if (add4spaces.indexOf(filename) >= 0) {
             addIndent = '    ';
         }
-        var add8spaces = ('dom7-methods.js dom7-ajax.js dom7-utils.js').split(' ');
+        var add8spaces = ('dom7/dom7-methods.js dom7/dom7-ajax.js dom7/dom7-utils.js').split(' ');
         if (add8spaces.indexOf(filename) >= 0) {
             addIndent = '        ';
         }
@@ -279,7 +281,10 @@
     gulp.task('ks-ios-jade', function (cb) {
         gulp.src(paths.ks.ios.jade)
             .pipe(jade({
-                pretty: true
+                pretty: true,
+                data: {
+                    icons: require('./manifest-icons-ios.json').icons
+                }
             }))
             .pipe(gulp.dest(paths.ks.ios.root))
             .pipe(connect.reload())
@@ -304,7 +309,10 @@
     gulp.task('ks-material-jade', function (cb) {
         gulp.src(paths.ks.material.jade)
             .pipe(jade({
-                pretty: true
+                pretty: true,
+                data: {
+                    icons: require('./manifest-icons-material.json').icons
+                }
             }))
             .pipe(gulp.dest(paths.ks.material.root))
             .pipe(connect.reload())

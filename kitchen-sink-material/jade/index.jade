@@ -11,6 +11,7 @@ html
     link(rel="stylesheet", href="../build/css/framework7.material.css")
     link(rel="stylesheet", href="../build/css/framework7.material.colors.css")
     link(href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700', rel='stylesheet', type='text/css')
+    link(rel="stylesheet", href="css/material-icons.css")
     link(rel="stylesheet", href="css/kitchen-sink.css")
     link(rel="icon", href="img/icon.png")
   body
@@ -25,9 +26,9 @@ html
                 .center Left Panel
             .page-content
               .content-block
-                p This is a side panel/drawer. You can close it by clicking outsite or on this link: 
+                p This is a side panel/drawer. You can close it by clicking outsite or on this link:
                   a(href="#").close-panel close me
-                  | . You can put here anything, even another isolated view like in 
+                  | . You can put here anything, even another isolated view like in
                   a(href="#", data-panel="right").open-panel Right Panel
               .content-block-title Framework7 Kitchen Sink
               .list-block
@@ -113,9 +114,9 @@ html
                 .center Right Panel
             .page-content
               .content-block
-                p This is a right side panel. You can close it by clicking outsite or on this link: 
+                p This is a right side panel. You can close it by clicking outsite or on this link:
                   a(href="#").close-panel close me
-                  | . You can put here anything, even another isolated view, try it: 
+                  | . You can put here anything, even another isolated view, try it:
               .list-block
                 ul
                   li
@@ -159,8 +160,6 @@ html
                           i.icon.icon-f7
                         .item-inner
                           .item-title Autocomplete
-                          .item-after
-                            span.badge.bg-green NEW
                   li
                     a(href="calendar.html").item-link
                       .item-content
@@ -168,8 +167,6 @@ html
                           i.icon.icon-f7
                         .item-inner
                           .item-title Calendar / Datepicker
-                          .item-after
-                            span.badge.bg-green NEW
 
                   li
                     a(href="cards.html").item-link
@@ -179,6 +176,13 @@ html
                         .item-inner
                           .item-title Cards
                   li
+                    a(href="chips.html").item-link
+                      .item-content
+                        .item-media
+                          i.icon.icon-f7
+                        .item-inner
+                          .item-title Chips
+                  li
                     a(href="contacts.html").item-link
                       .item-content
                         .item-media
@@ -186,15 +190,14 @@ html
                         .item-inner
                           .item-title Contacts List
                   li
-                    a(href="chips.html").item-link
+                    a(href="data-table.html").item-link
                       .item-content
                         .item-media
                           i.icon.icon-f7
                         .item-inner
-                          .item-title Chips
+                          .item-title Data Tables
                           .item-after
                             span.badge.bg-green NEW
-
                   li
                     a(href="floating-button.html").item-link
                       .item-content
@@ -202,9 +205,6 @@ html
                           i.icon.icon-f7
                         .item-inner
                           .item-title Floating Action Button
-                          .item-after
-                            span.badge.bg-green NEW
-
                   li
                     a(href="forms.html").item-link
                       .item-content
@@ -220,6 +220,16 @@ html
                           i.icon.icon-f7
                         .item-inner
                           .item-title Grid
+                  li
+                    a(href="icons.html").item-link
+                      .item-content
+                        .item-media
+                          i.icon.icon-f7
+                        .item-inner
+                          .item-title Icons
+                          .item-after
+                            span.badge.bg-green #{icons.length}
+
                   li
                     a(href="infinite-scroll.html").item-link
                       .item-content
@@ -280,8 +290,6 @@ html
                           i.icon.icon-f7
                         .item-inner
                           .item-title Navbars And Toolbars
-                          .item-after
-                            span.badge.bg-green NEW
 
                   li
                     a(href="notifications.html").item-link
@@ -329,8 +337,6 @@ html
                           i.icon.icon-f7
                         .item-inner
                           .item-title Progress Bar
-                          .item-after
-                            span.badge.bg-green NEW
 
                   li
                     a(href="pull-to-refresh.html").item-link
@@ -386,9 +392,15 @@ html
                           i.icon.icon-f7
                         .item-inner
                           .item-title Tabs
+                  li
+                    a(href="timeline.html").item-link
+                      .item-content
+                        .item-media
+                          i.icon.icon-f7
+                        .item-inner
+                          .item-title Timeline
                           .item-after
                             span.badge.bg-green NEW
-
                   li
                     a(href="virtual-list.html").item-link
                       .item-content
@@ -399,6 +411,15 @@ html
 
               .list-block
                 ul
+                  li
+                    a(href="animation.html").item-link
+                      .item-content
+                        .item-media
+                          i.icon.icon-f7
+                        .item-inner
+                          .item-title Animation
+                          .item-after
+                            span.badge.bg-green NEW
                   li
                     a(href="color-themes.html").item-link
                       .item-content
@@ -508,7 +529,7 @@ html
             li
               a(href="#").item-link.item-content.bg-purple.color-white.ripple-white
                 .item-media
-                  i.icon.ks-icon-edit
+                  i.icon.material-icons mode_edit
                 .item-inner
                   .item-title-row
                     .item-title Add New

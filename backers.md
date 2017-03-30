@@ -22,27 +22,49 @@ Support Framework7 development by [pledging on Patreon](https://www.patreon.com/
 
 ### $100
 
-[Currently vacant. It could be you!](https://www.patreon.com/bePatron?patAmt=100.0&exp=1&u=4109762&rid=830841)
+Juergen Schimmoeller
+
+[Join here](https://www.patreon.com/bePatron?patAmt=100.0&exp=1&u=4109762&rid=830841)
 
 ---
 
 ### $50+
 
-[Currently vacant. It could be you!](https://www.patreon.com/bePatron?patAmt=50.0&exp=1&u=4109762&rid=830842)
+Kris Reddy<br>
+Bart DJ
+
+[Join here!](https://www.patreon.com/bePatron?exp=1&rid=830842&u=4109762&patAmt=50.0)
 
 ---
 
 ### $10+
 
+Matthew Becker<br>
+Greg Hatt<br>
+Timo Ernst<br>
+Dmitry Akinin<br>
+Adrian Maleska<br>
+Michael Kreinbihl<br>
+Todd Crowe<br>
 Thanakrit Tangtermsak<br>
-Kris Reddy<br>
 Rick Chang<br>
 Dave Billington
+
+[Join here!](https://www.patreon.com/bePatron?exp=1&rid=830839&u=4109762&patAmt=10.0)
 
 ---
 
 ### $5+
 
-Bohdan Shulha<br>
-Timo Ernst<br>
+Daniel Wüst<br>
+Tirso Martínez Reyes<br>
+Zafer Ayan<br>
+Amir br<br>
+Toby Allen - Ballymaloe Cookery School<br>
+Dan Boschen<br>
+Daniel Dingemanse<br>
+Henry Blackman<br>
+Ruslan Skorynin<br>
 Sigfrido Rodríguez Santos
+
+[Join here!](https://www.patreon.com/bePatron?exp=1&rid=845389&u=4109762&patAmt=5.0)
